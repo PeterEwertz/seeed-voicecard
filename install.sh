@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FORCE_KERNEL="1.20200819-1"
+FORCE_KERNEL="1.20201022-1"
 
 if [[ $EUID -ne 0 ]]; then
    echo "This script must be run as root (use sudo)" 1>&2
@@ -241,13 +241,10 @@ if [[ $? -eq 0 ]]; then
   pacman -Syu --needed git gcc automake make dkms linux-raspberrypi-headers i2c-tools
 fi
 
-# locate currently installed kernels (may be different to running kernel if
-# it's just been updated)
-base_ver=$(get_kernel_version)
-base_ver=${base_ver%%[-+]*}
-# kernels="${base_ver}+ ${base_ver}-v7+ ${base_ver}-v7l+"
-# select exact kernel postfix
-kernels=${base_ver}$(echo $uname_r | sed -re 's/^[0-9.]+(.*)/\1/g')
+
+#kernels version is hard coded now . This is a working kernel for  Respeaker 
+#TODO fetch kernel version automactically
+kernels="5.4.72-v8+"
 
 function install_module {
   local _i
