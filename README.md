@@ -4,12 +4,12 @@
 
 The drivers of [ReSpeaker Mic Hat](https://www.seeedstudio.com/ReSpeaker-2-Mics-Pi-HAT-p-2874.html),[ReSpeaker 4 Mic Array](https://www.seeedstudio.com/ReSpeaker-4-Mic-Array-for-Raspberry-Pi-p-2941.html),[6-Mics Circular Array Kit](), and [4-Mics Linear Array Kit]() for Raspberry Pi.
 
-### Install seeed-voicecard
+### Install seeed-voicecard for 64 bit Raspberry OS
 Get the seeed voice card source code. and install all linux kernel drivers
 ```bash
-git clone https://github.com/respeaker/seeed-voicecard
+git clone https://github.com/WilliamVJacob/seeed-voicecard.git
 cd seeed-voicecard
-sudo ./install.sh
+sudo ./install.sh --compat-kernel
 sudo reboot
 ```
 It may probably happen that the driver won't compile with the latest kernel when raspbian rolls out new patches to the kernel. If so, please try `sudo ./install.sh --compat-kernel` which uses an older kernel but ensures that the driver can work. 
