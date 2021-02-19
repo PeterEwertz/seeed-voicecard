@@ -21,6 +21,8 @@ obj-m += snd-soc-wm8960.o
 obj-m += snd-soc-ac108.o
 obj-m += snd-soc-seeed-voicecard.o
 
+ccflags-y += -fno-stack-protector
+
 ifdef DEBUG
 ifneq ($(DEBUG),0)
 	ccflags-y += -DDEBUG -DAC101_DEBG
