@@ -1,8 +1,8 @@
-# seeed-voicecard
+# seeed-voicecard for 64 bit Raspberry OS
 
 [![Join the chat at https://gitter.im/seeed-voicecard/Lobby](https://badges.gitter.im/seeed-voicecard/Lobby.svg)](https://gitter.im/seeed-voicecard/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-The drivers of [ReSpeaker Mic Hat](https://www.seeedstudio.com/ReSpeaker-2-Mics-Pi-HAT-p-2874.html),[ReSpeaker 4 Mic Array](https://www.seeedstudio.com/ReSpeaker-4-Mic-Array-for-Raspberry-Pi-p-2941.html),[6-Mics Circular Array Kit](), and [4-Mics Linear Array Kit]() for Raspberry Pi.
+The drivers of [ReSpeaker Mic Hat](https://www.seeedstudio.com/ReSpeaker-2-Mics-Pi-HAT-p-2874.html),[ReSpeaker 4 Mic Array](https://www.seeedstudio.com/ReSpeaker-4-Mic-Array-for-Raspberry-Pi-p-2941.html),[6-Mics Circular Array Kit](), and [4-Mics Linear Array Kit]() for 64 bit Raspberry Pi OS.
 
 ### Install seeed-voicecard for 64 bit Raspberry OS
 Get the seeed voice card source code. and install all linux kernel drivers
